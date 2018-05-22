@@ -45,7 +45,6 @@
               "src/assets/css/skins/default.css",
               "src/assets/css/custom.css",
               "src/styles.css"
-
             ],
             "scripts": [
               "src/assets/vendor/jquery/jquery.min.js",
