@@ -5,10 +5,14 @@ import { ListingComponent } from './department-listing/listing.component';
 import { DetailsComponent } from './department-details/details.component';
 import { AddComponent } from './department-add/add.component';
 import { DepartmentItemSmallComponent } from './department-item-small/department-item-small.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([
+      {path:"details",component:DetailsComponent}
+    ])
   ],
   declarations: [
     ListingComponent, 
