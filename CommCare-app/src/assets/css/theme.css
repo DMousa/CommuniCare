@@ -2780,9 +2780,6 @@ section.section-custom-map-2 section.section {
 .home-concept .project-image .box-image .big-circle .line.animated-line {
 	animation-name: animatedLineBigCircle;
 	animation-timing-function: linear;
-}
-
-
 	background: transparent url(../img/home-concept-icons.png) no-repeat 0 0;
 
 	width: 60px;
@@ -4100,9 +4097,6 @@ html.dark section.section-custom-map {
 html.dark section.section-custom-map section.section {
 	border-top-color: rgba(40, 45, 54, 0.8);
 	background: rgba(33, 38, 45, 0.8);
-}
-
-
 	background-image: url(../img/home-concept-dark.png);
 }
 
