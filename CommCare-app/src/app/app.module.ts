@@ -17,6 +17,7 @@ import { HomeDoctorComponent } from './doctors/home-Doctor/home-Doctor.component
 import { AssignShiftComponent } from './assign-Task/assign-shift/assign-shift.component';
 import { AssignTaskComponent } from './assign-Task/assign-Task.component';
 import { DoctorsModule } from './doctors/doctors.module';
+import { Doctorservice } from './shared/services/doctor.service';
 
 
 
@@ -31,15 +32,13 @@ import { DoctorsModule } from './doctors/doctors.module';
     EventAddComponent,
     EventListingComponent,
     EventDetailsComponent,
-    AssignShiftComponent,
-    AssignTaskComponent
    ],
   imports: [
     BrowserModule ,
     DepartmentsModule,
     DoctorsModule
   ],
-  providers: [DepartmentService],
+  providers: [DepartmentService,Doctorservice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1131,6 +1131,7 @@ background-color: #eee;
 margin-top: 130px;
 margin-left: -31px;
 width:116%;
+height: 165px;
 
 }
 .detailsofexp h4{
@@ -1154,7 +1155,7 @@ padding-bottom: 13px;
 /*_____________________________ line ________________________*/
 .line{
   width: 10px;
-  height: 1000px;
+  height: 450px;
   background-color: gray;
 }
 .circleinline{
@@ -1226,7 +1227,8 @@ section.section {
 .docdetails{
   
   display:inline-block;
-  width:400px;
+  width: 317px;
+  margin-right: 36px;
   height:390px;
  border:1px solid rgb(221, 221, 221);
  transition: all ease 0.7s;
@@ -1235,9 +1237,10 @@ section.section {
   transform: scale(1.1);
 }
 .docdetails img{
-  width:382px;
+  width:315px;
   height: 200px;
   margin-bottom: 10px;
+  margin-left: -15px;
 }
 .docdetails .aboutdoc h4{
   text-transform: capitalize;
@@ -1249,4 +1252,7 @@ section.section {
 .docdetails .aboutdoc .docRates{
   margin-bottom: 13px;
   margin-top: -10px;
+}
+.docdetails .aboutdoc button{
+  margin-right: 10px;
 }
