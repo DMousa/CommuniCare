@@ -20,8 +20,13 @@ import { NavDoctorComponent } from 'src/app/doctors/Nav-doctor/Nav-doctor.compon
 import { HomeDoctorComponent } from './doctors/home-Doctor/home-Doctor.component';
 import { AssignShiftComponent } from './assign-Task/assign-shift/assign-shift.component';
 import { AssignTaskComponent } from './assign-Task/assign-Task.component';
+import { Routes, RouterModule } from '@angular/router';
 
+const appRoutes:Routes=[
+{path:'hospitals' , component: HospitalListingComponent},
+{path:'hospitals/id' , component: HospitalDetailsComponent},
 
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +49,8 @@ import { AssignTaskComponent } from './assign-Task/assign-Task.component';
 
   imports: [
     BrowserModule ,
-    DepartmentsModule
+    DepartmentsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
