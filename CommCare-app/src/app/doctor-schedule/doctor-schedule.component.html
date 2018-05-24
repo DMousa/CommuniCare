@@ -1,3 +1,133 @@
-<p>
-  doctor-schedule works!
-</p>
+<div id="calendar" data-toggle="modal" data-target="#myModal"> </div>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+
+          </div>
+          <div class="modal-body">
+
+                  <h4>Time Slot shift-1</h4>
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+
+                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <i class="fas fa-plus"></i>
+                          </a>
+
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                              <form class="form-horizontal" method="get">
+
+                                  <div class="form-group">
+                                      <label class="col-md-3 control-label" for="time-slot">Time Slot </label>
+                                      <div class="col-md-4">
+                                          <input type="datetime-local" class="form-control" id="time-slot">
+                                      </div>
+
+                                      <label class="col-md-2 " for="place-hos">place </label>
+                                      <div class="col-md-3">
+                                          <select class="form-control" id="place-hos">
+                                              <option>haram hospital</option>
+                                              <option> abc clinic </option>
+                                          </select>
+
+
+                                      </div>
+
+
+
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+
+
+              </div>
+
+              <div class="owl-carousel owl-theme" data-plugin-options="{'items': 1}">
+                  <!-- slide1 -->
+                  <div>
+                     
+                      <div class="listofappointments wow bounceInLeft data-wow-delay=" 3s " ">
+                          <ul>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 1:00 - 1:30 pm
+                                  <i class="fas fa-map-marker"></i> el hospital </li>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 1:30 - 2:00 pm
+                                  <i class="fas fa-map-marker"></i> abc </li>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 2:00 - 2:15 pm
+                                  <i class="fas fa-map-marker"></i> elsalam</li>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 2:30 - 2:45 pm
+                                  <i class="fas fa-map-marker"></i> clinic</li>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 9:00 - 10:30 pm
+                                  <i class="fas fa-map-marker"></i> dr-clinic</li>
+                          </ul>
+
+                      </div>
+                  </div>
+
+
+                  <!-- slide 2 -->
+                  <div>
+                  
+                      <div class="listofappointments wow bounceInLeft data-wow-delay=" 3s " ">
+                          <ul>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 1:00 - 1:30 pm
+                                  <i class="fas fa-map-marker"></i> el hospital </li>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 1:30 - 2:00 pm
+                                  <i class="fas fa-map-marker"></i> abc </li>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 2:00 - 2:15 pm
+                                  <i class="fas fa-map-marker"></i> elsalam</li>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 2:30 - 2:45 pm
+                                  <i class="fas fa-map-marker"></i> clinic</li>
+                              <li>
+                                  <span>
+                                      <i class="fas fa-chevron-right"></i>
+                                  </span> from 9:00 - 10:30 pm
+                                  <i class="fas fa-map-marker"></i> dr-clinic</li>
+                          </ul>
+
+                      </div>
+                  </div>
+              </div>
+
+
+          </div>
+         
+      </div>
+      <!-- /.modal-content -->
+
