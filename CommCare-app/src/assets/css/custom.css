@@ -1,5 +1,4 @@
 
-/*  header-navbar */
 .menu {
     position: fixed;
     top: 134px;
@@ -8,8 +7,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-  /*    outline: 2px solid #262f3c;*/
-      border-radius: 10px;
+    border-radius: 10px;
   }
   .menu li a{
       display:block;
@@ -120,7 +118,8 @@
 /* _________________________________header-bar____________________________________- */
 .header-bar{
 background-color: #008fe2;
-height: 50px;
+height: 57px;
+margin-top: 55px;
 }
 .header-bar .pages-path div{
 
@@ -417,62 +416,7 @@ width: 86%;
   line-height: 30px;
   font-weight: bold;
 } */
-/* ________________________________--prescription page ________________________*/
-.presc-word{
-    margin-top: 50px;
-    /* margin-left: -50px; */
-    font-weight: bold;
-    color: rgb(26, 129, 224);
-    text-align: center;
-}
-  .presc-form{
-      margin-top: 50px;
-      outline: 2px solid #eee;
-      outline-offset: 10px;
-  }
-  
-  .edit-medicine i{
-      padding-right: 10px;
-  }
-  .doct-block{
-      margin-left: -50px;
-  }
-  ul.portfolio-list .portfolio-item{
-      width: 120%;
-      padding-right: 38px;
-     
-  }
-.team .thumb-info .thumb-info-caption{
-  height: 140px;
-}
-  .header-search{
-      width: 50%;
-  }
-  .searchinpt{
-      margin-left: 120px;
-      margin-top: 60px;
-  }
-  .searchinpt2{
-    margin-left: 690px;
-    margin-top: 70px;
-    margin-bottom: -50px;
-   
-  }
-  .searchinpt2 input{
-    border-radius: 10px;
-  }
-  .sbmit-btn{
-    margin-top: 50px;
-    margin-left: 340px;
-    padding: 8px 100px;
-}
-  .searchinpt input{
 
-    border-radius: 10px;
-}
-.heading-word-dr{
-      margin-top: 50px;
-  }
   /* patients */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -1081,7 +1025,7 @@ color:#0088cc;
 }
 .profpic img{
   border: 10px solid #eee;
-  box-shadow: 10px 10px 10px #444;
+  /* box-shadow: 10px 10px 10px #444; */
 
 }
 .detailsaboutdr{
@@ -1106,7 +1050,6 @@ color:#0088cc;
    position: relative;
    top: -52px;
 }
-
 .aboutdr h2{
   padding-top: 90px;
   padding-left: 40px;
