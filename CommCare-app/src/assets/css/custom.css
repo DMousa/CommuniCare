@@ -1,5 +1,4 @@
 
-/*  header-navbar */
 .menu {
     position: fixed;
     top: 134px;
@@ -8,8 +7,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-  /*    outline: 2px solid #262f3c;*/
-      border-radius: 10px;
+    border-radius: 10px;
   }
   .menu li a{
       display:block;
@@ -27,7 +25,6 @@
   /*#1d2654*/
   .menu li a:before {
     font-family: FontAwesome;
-    /* speak: none; */
     text-indent: 0em;
     position: absolute;
     top: 0;
