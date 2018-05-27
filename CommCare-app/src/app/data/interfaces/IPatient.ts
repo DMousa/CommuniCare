@@ -7,5 +7,4 @@ export interface IPatient {
     phone: string;
     address: string;
     image: string;
-    id: number;
 }
