@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DepartmentService } from 'src/app/shared/services/department.service';
+import { Idepartment } from 'src/app/shared/interfaces/idepartment';
 
 @Component({
   selector: 'app-listing',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listing.component.css']
 })
 export class ListingComponent implements OnInit {
-
-  constructor() { }
+  departments:Idepartment[];
+  constructor(private deptservice:DepartmentService) { 
+    this.departments=deptservice.getAll();
+  }
 
   ngOnInit() {
   }

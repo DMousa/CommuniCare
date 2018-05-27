@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
+import { Idepartment } from 'src/app/shared/interfaces/idepartment';
+
 
 @Component({
   selector: 'app-department-item-small',
@@ -6,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./department-item-small.component.css']
 })
 export class DepartmentItemSmallComponent implements OnInit {
-
-  constructor() { }
+  @Input() department: Idepartment;
+  constructor() { 
+   }
 
   ngOnInit() {
   }
