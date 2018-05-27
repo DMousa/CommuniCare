@@ -9,18 +9,21 @@ export class DepartmentService
     {
         this.departments=[
             {
+                id:1,
                 name:'Cardiology',
                 briefDesc:'it is a brief description about caradiology',
                 detailedDesc:'it is a detailed description about caradiology',
                 photo:'../../../assets//img/demos/restaurant/blog/blog-restaurant-1.png'
             },
             {
+                id:2,
                 name:'Dental',
                 briefDesc:'it is a brief description about dental',
                 detailedDesc:'it is a detailed description about dental',
                 photo:'../../../assets//img/demos/restaurant/blog/blog-restaurant-1.png' 
             },
             {
+                id:3,
                 name:'Nutrition',
                 briefDesc:'it is a brief description about nutrition',
                 detailedDesc:'it is a detailed description about nutrition',
@@ -34,4 +37,8 @@ export class DepartmentService
         
                 return this.departments;
             }
+    public getById(id :number): Idepartment {
+                const index = this.departments.findIndex(a=>a.id == id);
+                return this.departments[index];
+            }       
 }
