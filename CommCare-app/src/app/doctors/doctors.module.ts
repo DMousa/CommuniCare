@@ -6,6 +6,7 @@ import { DoctorListingsComponent } from './doctor-listings/doctor-listings.compo
 import { DoctorAddComponent } from './doctor-add/doctor-add.component';
 import { DoctorItemSmallComponent } from './doctor-item-small/doctor-item-small.component';
 import { HomeDoctorComponent } from './home-Doctor/home-Doctor.component';
+import { DoctorCalendarComponent } from './doctor-calendar/doctor-calendar.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { HomeDoctorComponent } from './home-Doctor/home-Doctor.component';
     DoctorListingsComponent,
     DoctorAddComponent,
     DoctorItemSmallComponent,
-    HomeDoctorComponent
+    HomeDoctorComponent,
+    DoctorCalendarComponent
 ],
 exports:[
   DoctorsComponent

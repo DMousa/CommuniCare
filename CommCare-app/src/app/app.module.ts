@@ -19,8 +19,7 @@ import { DoctorsModule } from './doctors/doctors.module';
     EventsModule,
     BrowserModule ,
     DepartmentsModule,
-    DoctorsModule,
-    
+    DoctorsModule 
    ],
   providers: [DepartmentService],
   bootstrap: [AppComponent]
