@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { HomeDoctorComponent } from '../home-Doctor/home-Doctor.component';
 import { Idoctor } from '../../shared/interfaces/idoctor';
 
 @Component({

@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { AssignShiftComponent } from './assign-shift.component';
+import { TaskItemSmallComponent } from './task-item-small.component';
 
-describe('AssignShiftComponent', () => {
-  let component: AssignShiftComponent;
-  let fixture: ComponentFixture<AssignShiftComponent>;
+describe('TaskItemSmallComponent', () => {
+  let component: TaskItemSmallComponent;
+  let fixture: ComponentFixture<TaskItemSmallComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AssignShiftComponent ]
+      declarations: [ TaskItemSmallComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AssignShiftComponent);
+    fixture = TestBed.createComponent(TaskItemSmallComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

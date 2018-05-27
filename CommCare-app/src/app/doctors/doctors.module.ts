@@ -5,7 +5,6 @@ import { DoctorDetailsComponent } from './doctor-details/doctor-details.componen
 import { DoctorListingsComponent } from './doctor-listings/doctor-listings.component';
 import { DoctorAddComponent } from './doctor-add/doctor-add.component';
 import { DoctorItemSmallComponent } from './doctor-item-small/doctor-item-small.component';
-import { HomeDoctorComponent } from './home-Doctor/home-Doctor.component';
 
 @NgModule({
   imports: [
@@ -18,7 +17,6 @@ import { HomeDoctorComponent } from './home-Doctor/home-Doctor.component';
     DoctorListingsComponent,
     DoctorAddComponent,
     DoctorItemSmallComponent,
-    HomeDoctorComponent
 ],
 exports:[
   DoctorsComponent

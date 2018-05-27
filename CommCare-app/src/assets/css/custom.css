@@ -1151,6 +1151,7 @@ padding-bottom: 13px;
   margin-bottom: 50px;
   color:orange;
   font-weight: bold;
+  margin-left: -51px;
 }
 /*_____________________________ line ________________________*/
 .line{
@@ -1197,8 +1198,9 @@ padding-bottom: 13px;
 section.section {
   background: #faf8f8;
   border-top: 3px solid #f1f1f1;
-  margin: 93px 0;
-  padding: 52px 0;
+  margin: 93px -45px;
+  padding: 30px 23px;
+  width:122%;
 }
 .owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 70px;
@@ -1255,4 +1257,9 @@ section.section {
 }
 .docdetails .aboutdoc button{
   margin-right: 10px;
+}
+.thumb-info-action-icon p{
+  width: 100%;
+  margin: 72px -50px;
+  color:#fff;
 }
