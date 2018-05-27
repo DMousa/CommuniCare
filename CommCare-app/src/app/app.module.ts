@@ -9,6 +9,9 @@ import { EventAddComponent } from './events/event-add/event-add.component';
 import { EventListingComponent } from './events/event-listing/event-listing.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { DepartmentService } from 'src/app/shared/services/department.service';
+import { RouterModule } from '@angular/router';
+import { DepartmentsComponent } from 'src/app/departments/departments.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { DepartmentService } from 'src/app/shared/services/department.service';
   ],
   imports: [
     BrowserModule ,
-    DepartmentsModule
+    DepartmentsModule,
+    RouterModule.forRoot([
+      {path:"departments",component:DepartmentsComponent}
+    ])
   ],
   providers: [DepartmentService],
   bootstrap: [AppComponent]
