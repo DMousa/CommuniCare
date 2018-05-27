@@ -1,5 +1,3 @@
 <div class="row mt-lg">
-    <app-department-item-small></app-department-item-small>
-    <app-department-item-small></app-department-item-small>
-    <app-department-item-small></app-department-item-small>
+    <app-department-item-small *ngFor="let dept of departments" [department]="dept"></app-department-item-small>
 </div>

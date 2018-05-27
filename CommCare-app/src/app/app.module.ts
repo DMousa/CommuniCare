@@ -3,26 +3,51 @@ import { NgModule } from '@angular/core';
 import {DoctorScheduleComponent} from 'src/app/doctor-schedule/doctor-schedule.component';
 import { OnInit } from '@angular/core';
 import { AppComponent } from './app.component';
+import { HospitalListingComponent } from './hospitals/hospital-listing/hospital-listing.component';
+import {HospitalitemComponent} from './hospitals/hospital-listing/hospitalitem/hospitalitem.component';
+import {HospitalsComponent} from './hospitals/hospitals.component';
+import {HospitalDetailsComponent} from './hospitals/hospital-details/hospital-details.component';
 import { DepartmentsModule } from 'src/app/departments/departments.module';
-import { DoctorItemSmallComponent } from 'src/app/doctors/doctor-item-small/doctor-item-small.component';
 import { EventAddComponent } from './events/event-add/event-add.component';
 import { EventListingComponent } from './events/event-listing/event-listing.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 
+import { EventsModule } from './events/events.module';
+import { FooterComponent } from './shared/footer-content/footer.component';
+import { HeaderComponent } from './shared/header-content/header.component';
+
+import { DepartmentService } from 'src/app/shared/services/department.service';
+import { PrescriptionComponent } from 'src/app/prescription/prescription.component';
+import { HomeDoctorComponent } from './doctors/home-Doctor/home-Doctor.component';
+import { AssignShiftComponent } from './assign-Task/assign-shift/assign-shift.component';
+import { AssignTaskComponent } from './assign-Task/assign-Task.component';
+import { DoctorsModule } from './doctors/doctors.module';
 @NgModule({
   declarations: [
     AppComponent,
-    DoctorScheduleComponent,
-    DoctorItemSmallComponent,
-    EventAddComponent,
-    EventListingComponent,
-    EventDetailsComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
+    BrowserModule,
+    EventsModule
+    HospitalListingComponent,
+    HospitalitemComponent,
+    HospitalsComponent,
+    HospitalDetailsComponent ,
+    DoctorScheduleComponent,
+    EventAddComponent,
+    EventListingComponent,
+    EventDetailsComponent,
+    AssignShiftComponent,
+    AssignTaskComponent
+   ],
+  imports: [
     BrowserModule ,
-    DepartmentsModule
+    DepartmentsModule,
+    DoctorsModule
   ],
-  providers: [],
+  providers: [DepartmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

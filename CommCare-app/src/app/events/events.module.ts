@@ -9,10 +9,14 @@ import { EventDetailsComponent } from './event-details/event-details.component';
   imports: [
     CommonModule
   ],
-  declarations: [EventsComponent,
+  declarations: [
+    EventsComponent,
     EventAddComponent,
     EventListingComponent,
     EventDetailsComponent
+],
+exports:[
+  EventsComponent
 ]
 })
 export class EventsModule { }

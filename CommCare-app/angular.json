@@ -23,14 +23,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap3/dist/css/bootstrap.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css",
-              "src/assets/Css/vendor/animate/animate.min.css",
-              "src/assets/Css/css/theme.css",
-              "src/assets/Css/css/theme-elements.css",            
-              "src/assets/Css/vendor/rs-plugin/css/layers.css",
-              "src/assets/Css/css/skins/skin-medical.css",
-              "src/assets/Css/css/demos/demo-medical.css",
               "src/assets/vendor/bootstrap/css/bootstrap.min.css",
               "src/assets/vendor/font-awesome/css/font-awesome.min.css",
               "src/assets/vendor/animate/animate.min.css",
@@ -45,6 +37,7 @@
               "src/assets/Css/vendor/rs-plugin/css/layers.css",
               "src/assets/css/skins/default.css",
               "src/assets/Css/skins/skin-medical.css",
+              "src/assets/Css/demos/demo-medical.css",
               "src/assets/css/custom.css",
               "src/styles.css"
 
