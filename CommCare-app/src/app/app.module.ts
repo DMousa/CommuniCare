@@ -10,6 +10,7 @@ import { DepartmentService } from 'src/app/shared/services/department.service';
 import { RouterModule } from '@angular/router';
 import { DepartmentsModule} from 'src/app/departments/departments.module'
 import { DoctorsModule } from './doctors/doctors.module';
+import { DepartmentsComponent } from './departments/departments.component';
 
 @NgModule({
   declarations: [
