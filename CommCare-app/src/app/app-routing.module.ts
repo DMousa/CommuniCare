@@ -10,7 +10,6 @@ const routes:Routes=[
 {path: 'doctordetails', component: DoctorDetailsComponent},
 {path: 'doctorlisting', component: DoctorListingsComponent},
 {path:'doctoritem',component:DoctorItemSmallComponent},
-{path:'assignshift',component:AssignTaskComponent},
 ];
 
 @NgModule({
