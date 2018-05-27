@@ -10,6 +10,10 @@ import { HospitalAddComponent } from './hospital-add/hospital-add.component';
   imports: [
     CommonModule
   ],
-  declarations: [HospitalitemComponent, HospitalListingComponent, HospitalDetailsComponent, HospitalsComponent, HospitalAddComponent]
+  declarations: [HospitalitemComponent,
+     HospitalListingComponent,
+      HospitalDetailsComponent, 
+      HospitalsComponent, 
+      HospitalAddComponent]
 })
 export class HospitalsModule { }

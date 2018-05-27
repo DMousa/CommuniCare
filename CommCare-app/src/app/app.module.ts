@@ -20,6 +20,7 @@ import { AssignTaskComponent } from './assign-Task/assign-Task.component';
 import { DoctorsModule } from './doctors/doctors.module';
 import { Doctorservice } from './shared/services/doctor.service';
 import { AssignTaskModule } from './assign-Task/assign-Task.module';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { AssignTaskModule } from './assign-Task/assign-Task.module';
     EventsModule,
     DepartmentsModule,
     DoctorsModule,
-    AssignTaskModule
+    AssignTaskModule,
+    AppRoutingModule
    ],
   providers: [DepartmentService,Doctorservice],
   bootstrap: [AppComponent]
