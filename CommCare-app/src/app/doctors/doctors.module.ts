@@ -7,10 +7,13 @@ import { DoctorAddComponent } from './doctor-add/doctor-add.component';
 import { DoctorItemSmallComponent } from './doctor-item-small/doctor-item-small.component';
 import { HomeDoctorComponent } from './home-Doctor/home-Doctor.component';
 import { DoctorCalendarComponent } from './doctor-calendar/doctor-calendar.component';
+import { FullCalendarModule } from 'ng-fullcalendar';
+import { CalendarService } from '../shared/Services/CalendarService/Calendar.service';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FullCalendarModule,
   ],
   declarations: 
   [
@@ -19,11 +22,16 @@ import { DoctorCalendarComponent } from './doctor-calendar/doctor-calendar.compo
     DoctorListingsComponent,
     DoctorAddComponent,
     DoctorItemSmallComponent,
-    HomeDoctorComponent,
+    HomeDoctorComponent,
     DoctorCalendarComponent
 ],
 exports:[
-  DoctorsComponent
+  DoctorsComponent,
+  DoctorCalendarComponent
+],
+providers:
+[
+  CalendarService,
 ]
 
 })

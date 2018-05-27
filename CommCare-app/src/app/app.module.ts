@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { OnInit } from '@angular/core';
+import { NgModule , OnInit } from '@angular/core';
 import { AppComponent } from './app.component';
 import { EventsModule } from './events/events.module';
 import { FooterComponent } from './shared/footer-content/footer.component';
