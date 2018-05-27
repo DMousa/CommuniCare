@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {DoctorScheduleComponent} from 'src/app/doctor-schedule/doctor-schedule.component';
 import { OnInit } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HospitalListingComponent } from './hospitals/hospital-listing/hospital-listing.component';
@@ -29,24 +28,20 @@ import { DoctorsModule } from './doctors/doctors.module';
     HeaderComponent
   ],
   imports: [
-    BrowserModule,
-    EventsModule
+    EventsModule,
+    BrowserModule ,
+    DepartmentsModule,
+    DoctorsModule,
     HospitalListingComponent,
     HospitalitemComponent,
-    HospitalsComponent,
+    HospitalsComponent, 
     HospitalDetailsComponent ,
-    DoctorScheduleComponent,
     EventAddComponent,
     EventListingComponent,
     EventDetailsComponent,
     AssignShiftComponent,
     AssignTaskComponent
    ],
-  imports: [
-    BrowserModule ,
-    DepartmentsModule,
-    DoctorsModule
-  ],
   providers: [DepartmentService],
   bootstrap: [AppComponent]
 })

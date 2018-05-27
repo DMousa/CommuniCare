@@ -27,11 +27,6 @@
     "bootstrap3": "^3.3.5",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
-<<<<<<< HEAD
-    "npm": "^6.0.1",
-=======
-
->>>>>>> 9acccec2d6f9cc0ad139c2fa355a7f4ddd4e3b21
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
