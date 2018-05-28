@@ -30,7 +30,7 @@ import { DoctorsModule } from './doctors/doctors.module';
   ],
   imports: [
     BrowserModule,
-    EventsModule
+    EventsModule,
     HospitalListingComponent,
     HospitalitemComponent,
     HospitalsComponent,
@@ -40,13 +40,11 @@ import { DoctorsModule } from './doctors/doctors.module';
     EventListingComponent,
     EventDetailsComponent,
     AssignShiftComponent,
-    AssignTaskComponent
-   ],
-  imports: [
-    BrowserModule ,
+    AssignTaskComponent,
     DepartmentsModule,
     DoctorsModule
-  ],
+   ],
+  
   providers: [DepartmentService],
   bootstrap: [AppComponent]
 })
