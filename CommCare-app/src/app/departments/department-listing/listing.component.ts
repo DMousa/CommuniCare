@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import { DepartmentService } from 'src/app/shared/services/department.service';
 import { Idepartment } from 'src/app/shared/interfaces/idepartment';
 
@@ -9,11 +9,12 @@ import { Idepartment } from 'src/app/shared/interfaces/idepartment';
 })
 export class ListingComponent implements OnInit {
   departments:Idepartment[];
+
   constructor(private deptservice:DepartmentService) { 
     this.departments=deptservice.getAll();
   }
 
   ngOnInit() {
   }
-
+  
 }

@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule.forChild([
-      {path:"details",component:DetailsComponent}
+      {path:"details/:id",component:DetailsComponent}
     ])
   ],
   declarations: [

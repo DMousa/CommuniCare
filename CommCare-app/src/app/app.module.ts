@@ -6,14 +6,9 @@ import { EventsModule } from './events/events.module';
 import { FooterComponent } from './shared/footer-content/footer.component';
 import { HeaderComponent } from './shared/header-content/header.component';
 import { DepartmentService } from 'src/app/shared/services/department.service';
-import { PrescriptionComponent } from 'src/app/prescription/prescription.component';
-import { AssignTaskComponent } from './assign-Task/assign-Task.component';
+import { DepartmentsModule} from 'src/app/departments/departments.module'
 import { DoctorsModule } from './doctors/doctors.module';
-import { Doctorservice } from './shared/services/doctor.service';
-import { AssignTaskModule } from './assign-Task/assign-Task.module';
-import { AppRoutingModule } from './/app-routing.module';
-import { DepartmentsModule } from './departments/departments.module';
-
+import { DepartmentsComponent } from './departments/departments.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +21,13 @@ import { DepartmentsModule } from './departments/departments.module';
     BrowserModule,
     EventsModule,
     DepartmentsModule,
-    DoctorsModule,
-    AssignTaskModule,
-    AppRoutingModule
+    RouterModule.forRoot([
+      {path:"departments",component:DepartmentsComponent}
+    ]),
+    DoctorsModule 
    ],
-  providers: [DepartmentService,Doctorservice],
+
+  providers: [DepartmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
