@@ -2770,11 +2770,8 @@ section.section-custom-map-2 section.section {
 .home-concept .project-image .box-image .big-circle .line.animated-line {
 	animation-name: animatedLineBigCircle;
 	animation-timing-function: linear;
-<<<<<<< HEAD
-=======
-
+}
 .home-concept .sun {
->>>>>>> 39fb2571b210505966df80c83babd5097cd09da5
 	background: transparent url(../img/home-concept-icons.png) no-repeat 0 0;
 	width: 60px;
 	height: 56px;
@@ -4081,16 +4078,8 @@ html.dark section.section-custom-map {
 html.dark section.section-custom-map section.section {
 	border-top-color: rgba(40, 45, 54, 0.8);
 	background: rgba(33, 38, 45, 0.8);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 }
-
 html.dark .home-concept {
-=======
-
->>>>>>> 714871a429357b9adfdab29cce9295ff8cff4835
->>>>>>> 39fb2571b210505966df80c83babd5097cd09da5
 	background-image: url(../img/home-concept-dark.png);
 }
 
