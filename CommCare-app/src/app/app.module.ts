@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule , OnInit } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { EventsModule } from './events/events.module';
 import { FooterComponent } from './shared/footer-content/footer.component';
@@ -22,13 +23,13 @@ import { HospitalFooterComponent } from 'src/app/shared/hospital-footer/hospital
     HospitalFooterComponent
   ],
   imports: [
+    BrowserModule,
     EventsModule,
-    BrowserModule ,
     DepartmentsModule,
+    DoctorsModule,
     RouterModule.forRoot([
       {path:"departments",component:DepartmentsComponent}
-    ]),
-    DoctorsModule 
+    ])
    ],
 
   providers: [DepartmentService],

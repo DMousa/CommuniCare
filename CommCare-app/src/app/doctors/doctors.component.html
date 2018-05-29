@@ -3,7 +3,7 @@
       <div class="col-md-3 pages-path">
         <div class="logo-for-dr"> Doctor
           <span>
-            <a href="Home-doc.html">wall </a>
+            <a routerLink="/doctor-details/{{doctor.id}}" >wall </a>
             <span class="var-page"> / Profile </span>
           </span>
         </div>
@@ -11,12 +11,10 @@
   
       <div class="col-md-8 ">
         <ul class="list-inline social-links text-center right">
-          <li class="search-header">
-            <!-- <input type="text" placeholder="Search"> -->
-            <!-- <i class="fa fa-search " aria-hidden="true"></i> -->
+          <!-- <li class="search-header">
             <span class="glyphicon glyphicon-search " aria-hidden="true"> </span>
   
-          </li>
+          </li> -->
           <li>
             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
   
@@ -84,13 +82,12 @@
         </ul>
   
       </section>
-   <div class="col-md-7">
-       <app-doctor-details> </app-doctor-details>
-   </div>
   
     </div>
-    <div class="col-md-7">
+    <div class="col-md-9">
       <app-doctor-details></app-doctor-details>
+      <!-- <app-doctor-listings></app-doctor-listings> -->
     </div>
   
   </div>
+ 

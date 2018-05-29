@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Idoctor } from '../../shared/interfaces/idoctor';
+import { Doctorservice } from '../../shared/services/doctor.service';
 
 @Component({
   selector: 'app-doctor-listings',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./doctor-listings.component.css']
 })
 export class DoctorListingsComponent implements OnInit {
-
-  constructor() { }
+  doctors:Idoctor[];
+  constructor(private docservice:Doctorservice) { 
+    this.doctors=docservice.getAll();
+  }
 
   ngOnInit() {
   }

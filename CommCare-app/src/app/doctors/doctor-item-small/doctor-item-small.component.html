@@ -1,9 +1,9 @@
-<div class="row">
-    <div class="col-xs-12 docdetails ">
+
+    <div class="col-md-3 docdetails ">
         <img src="../../../assets/img/detail.jpg" >
         <div class="aboutdoc text-center">
-            <h4> sarah hossam mounir </h4>
-            <h5> doctor doctor </h5>
+            <h4> {{doctor.name}} </h4>
+            <h5> {{doctor.speciality}} </h5>
 
             <div class="row">
                 <div class="docRates">
@@ -15,11 +15,12 @@
 
                 </div>
             </div>
-            <button class="btn btn-primary">See Profile</button>
+            <button class="btn btn-primary" routerLink="/doctor-details/{{doctor.id}}" >See Profile</button>
+            
             <button class="btn btn-default "> Book An Appointment </button>
 
         </div>
 
 
     </div>
-</div>   
+ 
