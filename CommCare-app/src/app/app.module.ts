@@ -6,7 +6,6 @@ import { EventsModule } from './events/events.module';
 import { FooterComponent } from './shared/footer-content/footer.component';
 import { HeaderComponent } from './shared/header-content/header.component';
 import { DepartmentService } from 'src/app/shared/services/department.service';
-import { RouterModule } from '@angular/router';
 import { DepartmentsModule} from 'src/app/departments/departments.module'
 import { DoctorsModule } from './doctors/doctors.module';
 import { DepartmentsComponent } from 'src/app/departments/departments.component';
